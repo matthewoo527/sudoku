@@ -30,6 +30,15 @@ public class SudokuBoard {
    }
    
    public String toString() {
-      return "";      
+      String build = " -----------------\n";
+      for(int r = 0; r < board.length; r++) {
+         build += "|\t";
+         for(int c = 0; c < board[0].length; c++) {
+            build += board[r][c] + "|\t";
+         }
+         build += "|\n";
+      }
+      build += " -----------------\n";
+      return build;   
    }
 }
