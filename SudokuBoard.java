@@ -17,7 +17,7 @@ public class SudokuBoard {
                if(num == '.') {
                   board[r][c] = 0;
                }else {
-                  board[r][c] = num;
+                  board[r][c] = num - 48;
                }
             }
          }
